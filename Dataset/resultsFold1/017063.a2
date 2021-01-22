@@ -1,0 +1,3 @@
+R1	parent arg1:T1 arg2:T2
+R2	successor arg1:T1 arg2:T2
+R3	successor arg1:T2 arg2:T1

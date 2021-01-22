@@ -1,0 +1,2 @@
+R1	partOf arg1:T1 arg2:T2
+R2	successor arg1:T1 arg2:T2

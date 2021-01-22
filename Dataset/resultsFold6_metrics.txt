@@ -1,0 +1,14 @@
+deathOrBurialPlace	TP:104 FP:64 FN:39	P:0.619048 R:0.727273 F1:0.668810
+influencedBy      	TP:0 FP:0 FN:1	P:0.000000 R:0.000000 F1:0.000000
+keyPerson         	TP:1 FP:0 FN:5	P:1.000000 R:0.166667 F1:0.285714
+locatedInArea     	TP:7705 FP:84 FN:48	P:0.989216 R:0.993809 F1:0.991507
+origin            	TP:821 FP:80 FN:75	P:0.911210 R:0.916295 F1:0.913745
+other             	TP:90 FP:12 FN:149	P:0.882353 R:0.376569 F1:0.527859
+parent            	TP:2 FP:4 FN:2	P:0.333333 R:0.500000 F1:0.400000
+partOf            	TP:118 FP:39 FN:26	P:0.751592 R:0.819444 F1:0.784053
+partner           	TP:0 FP:0 FN:1	P:0.000000 R:0.000000 F1:0.000000
+successor         	TP:2 FP:1 FN:4	P:0.666667 R:0.333333 F1:0.444444
+--------------------------------------------------
+All               	TP:8843 FP:284 FN:350	P:0.968884 R:0.961928 F1:0.965393
+Saving results to directory...
+--- 809.891185760498 seconds ---

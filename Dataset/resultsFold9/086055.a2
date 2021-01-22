@@ -1,0 +1,3 @@
+R1	other arg1:T2 arg2:T1
+R2	partOf arg1:T2 arg2:T1
+R3	successor arg1:T2 arg2:T1

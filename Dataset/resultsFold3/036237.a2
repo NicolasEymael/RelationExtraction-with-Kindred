@@ -1,0 +1,3 @@
+R1	deathOrBurialPlace arg1:T2 arg2:T1
+R2	parent arg1:T2 arg2:T1
+R3	partOf arg1:T2 arg2:T1

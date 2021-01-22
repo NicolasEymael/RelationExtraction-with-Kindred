@@ -1,0 +1,4 @@
+R1	keyPerson arg1:T1 arg2:T2
+R2	partOf arg1:T1 arg2:T2
+R3	keyPerson arg1:T2 arg2:T1
+R4	partOf arg1:T2 arg2:T1

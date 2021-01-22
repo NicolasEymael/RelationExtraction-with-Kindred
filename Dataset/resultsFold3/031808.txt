@@ -1,0 +1,1 @@
+Herb Sutter é um programador, escritor e colunista dos Estados Unidos, conhecido como um dos mais proeminentes especialistas em C++ na atualidade , além de pesquisador sobre programação concorrente e multitarefa.

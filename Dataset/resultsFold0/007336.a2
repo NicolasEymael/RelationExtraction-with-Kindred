@@ -1,0 +1,2 @@
+R1	other arg1:T1 arg2:T2
+R2	locatedInArea arg1:T2 arg2:T1
