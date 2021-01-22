@@ -13,32 +13,33 @@ if __name__ == '__main__':
 	parser.add_argument('--fold',required=True,type=str,help='Fold to predict')
 	args = parser.parse_args()
 
+	outputPath = "Dataset/resultsFold" + args.fold
+	sys.stdout = open(outputPath + "_metrics.txt", 'w+')
+
 	print("Building file paths...")
 	trainPaths = list()
 	for fold_index in range(0, foldCount):
 		if str(fold_index) != args.fold:
 			trainPaths.append("Dataset/Fold" + str(fold_index) + "/")
 	goldPath = "Dataset/Fold" + args.fold + "/"
-	outputPath = "Dataset/resultsFold" + args.fold
 
 	print("Loading corpora...")
-	trainCorpi = list()
+	trainCorpora = list()
 	for path in trainPaths:
-		trainCorpi.append(kindred.load('standoff',path))
+		trainCorpora.append(kindred.load('standoff',path))
 	goldCorpus = kindred.load('standoff', goldPath)
 	predictionCorpus = goldCorpus.clone()
 	predictionCorpus.removeRelations()
 
 	print("Building classifier...")
 	classifier = kindred.RelationClassifier(model='pt')
-	for corpus in trainCorpi:
+	for corpus in trainCorpora:
 		classifier.train(corpus)
 
 	print("Applying classifier...")
 	classifier.predict(predictionCorpus)
 
 	print("Calculating metrics...")
-	sys.stdout = open(outputPath + "_metrics.txt", 'w+')
 	metrics = kindred.evaluate(goldCorpus, predictionCorpus, metric='all', display=True)
 
 	if not os.path.isdir(outputPath):
